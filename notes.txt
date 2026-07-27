@@ -1,0 +1,22 @@
+# Authentication - process of verifying who user is, usuaally through login system
+# Like email and password; only authenticated users can access certain parts of your API
+# Authorization - after authentication, authorization is what the user is allowed to do e.g. regular
+# vs. admin. Authentication - user proves they are user 123; authorization user 123 can view own data
+# but cannot delete another user's data. 
+# What is JWT, and why use JWT (JSON Web Tokens) - compact token sent by clients to prove they are
+# authenticated. Tokens are a signal with a secret key, so the server can verify they haven't been
+# tempered with. No server-side session storage is needed - everything needed to verify is inside
+# the token. 
+# How JWT works - User logs in with creditials > Server verify login and generates a JWT token
+# > Client includes this token in the Authorization header for future requests. > Server checks
+# token validity before responding. This pater makes scalable and stateless authentication possible
+
+# Next we create folder called auth - and we will create multiple files in this authorization and authentication folder
+# auth_database.py
+# We copy everything from the file called database we had
+# Next we copy the table file, auth_table.py
+# Next we must install the libraries needed for authentication
+# passlib[argon2], it will be used for hashing our passwords.
+# The second one is python-josh[cryptography] and also python-multipart
+# as well as pydantic[email]. Then we create the files called, models.py, where
+# we will create the table that we are creating in our database

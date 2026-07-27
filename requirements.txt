@@ -1,2 +1,9 @@
 fastapi
 uvicorn
+sqlalchemy
+pymysql
+python-dotenv
+pip install "passlib[argon2]" # hashing passwords
+pip install "python-jose[cryptography]"
+pip install python-multipart # for filling up forms, parse the data from form
+pip install "pydantic[email]" # matching data with the email form
